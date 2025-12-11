@@ -1,0 +1,9 @@
+plots
+workflows
+run
+
+__pycache__
+
+model_plastic_forward.pth
+model_plastic_forward_disjoint.pth
+model_plastic_forward_factorized.pth

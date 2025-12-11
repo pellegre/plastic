@@ -1,0 +1,30 @@
+global:
+  seed: 42
+
+dataset:
+  dataset_type: disjoint
+  num_nodes: 8
+  edge_prob: 0.1
+  num_samples_per_graph: 10
+  num_graphs: 16000
+  num_timesteps: 100
+  num_actions: 6
+  test_fraction: 0.2
+
+network:
+  network_type: plastic
+  hidden_dim: 512
+
+trainer:
+  epochs: 50
+  batch_size: 512
+  lr: 0.0005
+  val_split: 0.2
+  scheduler: cosine
+
+evaluation:
+  long_timesteps: 2000
+  long_window_size: 100
+  boundary_num_graphs: 10
+  boundary_repeats_per_graph: 10
+  boundary_window_size: 100
